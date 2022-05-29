@@ -3,8 +3,11 @@ Automation Codebase for Automating a Website
 
 The TestArchitect script for this project is available in the TestArchitecture.png file
  
-The project uses Specflow for BDD implementation and C# programming language
+The project uses Specflow for BDD implementation and C# as programming language.
+
 As of now 3 browsers are supported Edge, firefox and Chrome 
+The browser selection can be done by changing the tag in "SpecFlowFeature1.feature" file
+as Chrome, Edge and Firefox
 
 Web driver versions  are listed below
 Chrome   --> 101.0.4951.41
