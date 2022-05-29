@@ -19,7 +19,6 @@
     <PackageReference Include="SpecRun.Runner" Version="3.9.31" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Drivers\" />
     <Folder Include="Hooks\" />
   </ItemGroup>
   <ItemGroup>

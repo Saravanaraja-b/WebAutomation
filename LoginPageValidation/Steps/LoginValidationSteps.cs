@@ -17,8 +17,10 @@ namespace LoginPageValidation.Steps
         public LoginValidationSteps(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
+            var sce = _scenarioContext.ScenarioInfo.Tags;
         }
 
+       
         public IDriver webDriver = new Driver();
 
         public IBasePage basePage => new BasePage(webDriver);
@@ -28,13 +30,15 @@ namespace LoginPageValidation.Steps
         public ICartCheckoutInformation ChekoutInformationpage => new CartCheckoutInformation(webDriver);
         public ICheckOutConfirmationPage checkOutConfirmationPage => new CheckOutConfirmationPage(webDriver);
 
+        
         [Given(@"User launches the browser")]
+        
         public void GivenUserLaunchesTheBrowser()
         {
             try
             {
 
-                webDriver.Initialize_Browser();
+                webDriver.Initialize_Browser(_scenarioContext.ScenarioInfo.Tags[0].ToString());
             }
             catch (Exception ex)
             {

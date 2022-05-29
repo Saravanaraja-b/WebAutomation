@@ -49,6 +49,7 @@ namespace PageRepositories.Navigation
         public void continue_checkOut()
         {
             continue_Btn.Click();
+            this.webDriver.getDriver.Manage().Timeouts().PageLoad = TimeSpan.FromMilliseconds(5000);
         }
 
         public void cancel_checkOut()

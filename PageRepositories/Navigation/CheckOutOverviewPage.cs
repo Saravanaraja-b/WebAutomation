@@ -31,11 +31,13 @@ namespace PageRepositories.Navigation
         public void checkOut_overView_Completion()
         {
             checkout_Overview_finish_btn.Click();
+            this.webDriver.getDriver.Manage().Timeouts().PageLoad = TimeSpan.FromMilliseconds(5000);
         }
 
         public void checkOut_overView_Cancel()
         {
             checkout_Overview_cancel_btn.Click();
+            this.webDriver.getDriver.Manage().Timeouts().PageLoad = TimeSpan.FromMilliseconds(5000);
         }
 
     }

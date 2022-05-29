@@ -13,7 +13,7 @@ namespace WebAutomation.ITestStartupandTearDown
 
         string Title { get; }
 
-        void Initialize_Browser();
+        void Initialize_Browser(string browser);
 
         void Goto(string url);
 
