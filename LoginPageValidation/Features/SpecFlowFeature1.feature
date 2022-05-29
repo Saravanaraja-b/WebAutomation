@@ -3,8 +3,8 @@
 Background: Navigate to website
 	Given User launches the browser
 	And Navigate to "https://www.saucedemo.com/"
-
-Scenario: Login with Invalid UserName
+	@Firefox
+Scenario: Login and checkout a product
 	Given the user is in login page
 	And the user enters username standard_user and password secret_sauce
 	And the user click Login button

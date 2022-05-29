@@ -8,7 +8,7 @@ namespace PageRepositories.INavigation
 {
     public interface IBasePage
     {
-        void NavigatetoInventoryScreen();
+        //void NavigatetoInventoryScreen();
         void InputLogin(string userName, string password);
         void proceedToLogin();
        // bool isLoginSuccess();

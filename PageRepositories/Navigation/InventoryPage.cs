@@ -22,19 +22,7 @@ namespace PageRepositories.Navigation
         public IButtonElement addProduct_btn => Element.FindElementByXpath<IButtonElement>(backpack_addtoCart_Id, this.webDriver.getDriver);
         public IButtonElement removeProduct_btn => Element.FindElementByXpath<IButtonElement>(backpack_addtoCart_remove_Id, this.webDriver.getDriver);
         public IButtonElement cart_btn => Element.FindElementByXpath<IButtonElement>(cart_id, this.webDriver.getDriver);
-
-        ////public string passWord_Id = "//input[@id='inputPassword']";
-        ////public string captcha_Xpath = "recaptcha-checkbox-border";
-        ////public string login_button_Id = "//*[@id='login']";
-        ////public string error_message_xpath = "//div[contains(text(),'Please complete the captcha and try again.')]";
-        //public string parentWindowHandle;
-
-        ////public IWebElement userNameInput => this.webDriver.FindElement(By.XPath(userName_Id));
-        ////public ITextBoxElement userNameInput => this.element.FindElementByXpath<ITextBoxElement>(userName_Id, this.webDriver);
-        ////public IWebElement passWordInput => this.webDriver.FindElement(By.XPath(passWord_Id));
-        ////public IWebElement captcha => this.webDriver.FindElement(By.ClassName(captcha_Xpath));
-        ////public IWebElement login_button => this.webDriver.FindElement(By.XPath(login_button_Id));
-        ////public IWebElement error_Message => this.webDriver.FindElement(By.XPath(error_message_xpath));
+              
 
         public InventoryPage(IDriver driver)
         {
@@ -43,6 +31,7 @@ namespace PageRepositories.Navigation
 
         public void select_Product()
         {
+            Wait.UntilElementVisible(this.backpack_addtoCart_Id, this.webDriver.getDriver, 5);
             this.addProduct_btn.Click();
             Wait.UntilElementVisible(this.backpack_addtoCart_remove_Id, this.webDriver.getDriver, 5);
            // Wait.UntilElementVisible( "hellow", this.webDriver.getDriver, 5);

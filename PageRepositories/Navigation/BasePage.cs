@@ -31,12 +31,12 @@ namespace PageRepositories.Navigation
             this.webDriver = driver;
         }
 
-        public void NavigatetoInventoryScreen()
-        {            
-            var title = this.webDriver.Title;
-            this.LoginButton.Click();
-            this.webDriver.getDriver.Manage().Timeouts().PageLoad = TimeSpan.FromMilliseconds(15000);
-        }       
+        //public void NavigatetoInventoryScreen()
+        //{            
+        //    var title = this.webDriver.Title;
+        //    this.LoginButton.Click();
+        //    this.webDriver.getDriver.Manage().Timeouts().PageLoad = TimeSpan.FromMilliseconds(5000);
+        //}       
 
         public void InputLogin(string userName, string password)
         {

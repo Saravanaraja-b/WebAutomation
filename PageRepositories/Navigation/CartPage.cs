@@ -30,6 +30,7 @@ namespace PageRepositories.Navigation
         public void checkOut_Product()
         {
             cart_ContinueShopping_btn.Click();
+            this.webDriver.getDriver.Manage().Timeouts().PageLoad = TimeSpan.FromMilliseconds(5000);
         }
 
         public void checkOut_ContinueShopping()
